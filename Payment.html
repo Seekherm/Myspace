@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="/storage/emulated/0/Algorithm/signup.css" />
+     <title> Try It Yourself </title>
+     <style>
+* {
+box-sizing: border-box;
+}
+body {
+margin: 30px;
+}
+form {
+border: 1px solid #333;
+padding: 20px;
+max-width: 400px;
+margin: 0 auto;
+border-radius: 10px;
+height: 100%
+}
+.input-group {
+display: flex;
+margin-bottom: 30px;
+}
+label {
+width: 100px;
+}
+input,
+select,
+textarea {
+flex: 1;
+padding: 3px 5px;
+border-radius: 20px
+}
+.submit-group {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+button {
+width: 100px;
+margin: 0 auto;
+background-color: black;
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+#cvv {
+width: 30%
+}
+#edat {
+width: 70%
+}
+h1 {
+text-align: center;
+}
+
+     </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<h1>
+ADD A NEW CARD</h1>
+
+     <form>
+           <div class="input-group">
+<input type="number" id="cnum" name="cnum" placeholder="Card Number" required="required" minlength="16"
+/>
+       </div>
+  
+<div class="input-group">
+<input type="month" id="edat" name="edat" placeholder="Expiry Date" required="required" >
+<input type="number" id="cvv" name="cvv" placeholder="CVV" required="required" maxlength="4">
+</div>
+
+
+    <div class="input-group">
+<p>Amount (<span>&#8358;</span>)</p>
+<hr />
+<p><input type="number" id="cnum" name="cnum" placeholder="min.₦100.00" required="required"/>
+    </div>
+    <div class="submit-group">
+
+<button type="submit">Donate</button>
+     </div>
+</form>
+</body>
+</html>
